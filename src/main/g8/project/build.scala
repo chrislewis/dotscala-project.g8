@@ -1,14 +1,14 @@
 import sbt._
 import Keys._
 
-object Build extends sbt.Build {
+object $name;format="camel,word"$ extends sbt.Build {
 
   lazy val root =
-    project(id = "$name$-all",
-            base = file(".")) aggregate(core, mongo)
+    project(id = "$name;format="normalize"$-all",
+            base = file(".")) aggregate(core)
 
   lazy val core =
-    project(id = "$name$-core",
+    project(id = "$name;format="normalize"$-core",
             base = file("$name$-core"),
             settings = Seq(
               libraryDependencies <++= scalaVersion (v => Seq(
@@ -37,7 +37,7 @@ object Shared {
     version := "$version$",
     scalaVersion := "2.9.1",
     crossScalaVersions := Seq("2.8.1, 2.9.0, 2.9.0-1"),
-    initialCommands := "import $organization$.$name$._"
+    initialCommands := "import $organization$.$name;format="normalize,word"$._"
   )
   
 }
