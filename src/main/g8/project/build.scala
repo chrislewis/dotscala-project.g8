@@ -4,14 +4,14 @@ import Keys._
 object $name;format="Camel,word"$Build extends sbt.Build {
   
   lazy val $name;format="camel,word"$ =
-    Project(id = "$name;format="normalize"$",
+    Project(id = "$name;format="norm"$",
             base = file("."),
             settings = Project.defaultSettings ++ Seq(
               organization := "$organization$",
               version := "$version$",
               scalaVersion := "2.9.2",
               crossScalaVersions := Seq("2.8.1", "2.9.0", "2.9.0-1", "2.9.1"),
-              initialCommands := "import $organization$.$name;format="normalize,word"$._",
+              initialCommands := "import $organization$.$name;format="norm,word"$._",
               resolvers += "Scala-Tools Maven2 Snapshots Repository" at "http://scala-tools.org/repo-snapshots",
               libraryDependencies <++= scalaVersion (v => Seq(
                 Shared.specsDep(v):_*

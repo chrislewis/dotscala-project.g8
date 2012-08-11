@@ -1,4 +1,4 @@
-package $organization$.$name;format="camel,word"$
+package $organization$.$name;format="norm"$
 
 object App {
   def main(args: Array[String]) {
