@@ -3,7 +3,7 @@ import Keys._
 
 object $name;format="Camel,word"$Build extends sbt.Build {
   
-  lazy val $name;format="word,lower,snake"$ =
+  lazy val $name;format="camel,word"$ =
     Project(id = "$name;format="normalize"$",
             base = file("."),
             settings = Project.defaultSettings ++ Seq(
