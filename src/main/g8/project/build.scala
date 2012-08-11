@@ -3,8 +3,8 @@ import Keys._
 
 object $name;format="Camel,word"$Build extends sbt.Build {
   
-  lazy val core =
-    Project(id = "$name;format="normalize"$-core",
+  lazy val $name;format="snake"$ =
+    Project(id = "$name;format="normalize"$",
             base = file("."),
             settings = Project.defaultSettings ++ Seq(
               organization := "$organization$",
